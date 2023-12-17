@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Học về form</title>
+    </head>
+
+    <body>
+
+        <form>
+            <!-- 1. element cho phép người dùng nhập dữ liệu trên 1 dòng  -->
+            <p>
+                <label for="name">Nhập tên</label>
+                <input
+                    id="name" 
+                    type="text" 
+                    placeholder="Nhập tên"
+                    value="tên tôi là đức"
+                />
+            </p>
+
+            <!-- 1.1. sử dụng âm thanh tương tự tạo ra input cho email và password -->
+            <p>
+                <label for="email">Nhập email</label>
+                <input
+                    id="email" 
+                    type="email" 
+                    placeholder="Nhập email"
+                />
+            </p>
+
+            <p>
+                <label for="password">Nhập pasword</label>
+                <input
+                    id="password" 
+                    type="password" 
+                    placeholder="Nhập password"
+                />
+            </p>
+
+            <!-- 2. element cho phép người dùng chọn một giá trị -->
+            <div>
+                <h2>Chọn giới tính</h2>
+                <div class="content">
+                    <p>
+                        <input type="radio" name="gender" id="male"/>
+                        <label for="male">Nam</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="gender" id="female"/>
+                        <label for="female">Nữ</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="gender" id="void"/>
+                        <label for="void">Giới tính khác</label>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. element cho phép người dùng chọn nhiều giá trị -->
+            <div>
+                <h2>Chọn sở thích</h2>
+                <div class="content">
+                    <p>
+                        <input type="checkbox" id="football"/>
+                        <label for="football">Bóng đá</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="music"/>
+                        <label for="music">Nghe nhạc</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="movie"/>
+                        <label for="movie">Xem phim</label>
+                    </p>
+                </div>
+            </div>
+            <!-- 3.1 kết luận: input nhập liệu trên 1 dòng chỉ khác nhau type="another" -->
+
+            <!-- 4. element select chọn option -->
+            <p>
+                <h2>Chọn quốc gia bạn đang sống?</h2>
+                <select>
+                    <option>Viet Nam</option>
+                    <option>Mĩ</option>
+                    <option>Trung quốc</option>
+                </select>
+            </p>
+
+            <!-- 5. element cho phép nhập nội dung trên nhiều dòng -->
+            <p>
+                <h2>Xin nhập giới thiệu về bạn?</h2>
+                <textarea>Tôi là nội dung textarea</textarea>
+            </p>
+            <!-- 6. element cho upload file -->
+            <p>
+                <h2>File upload</h2>
+                <input type="file"/>
+            </p>
+            <!-- 7. element input hidden -->
+            <p>
+                <input type="hidden" value=""/>
+            </p>
+            <!-- 8. Một số input html 5 khác và nó ít dùng -->
+            <p>
+                <label for="">Number</label>
+                <input type="number"/>
+            </p>
+            <p>
+                <label for="">Date</label>
+                <input type="date"/>
+            </p>
+            <p>
+                <label for="">Url</label>
+                <input type="url"/>
+            </p>
+            <p>
+                <label for="">Tel</label>
+                <input type="tel"/>
+            </p>
+            <p>
+                <label for="">Color</label>
+                <input type="color"/>
+            </p>
+
+            <fieldset>
+                <legend>Fruit juice size</legend>
+                <p>
+                    <input type="radio" name="size" id="size_1" value="small" />
+                    <label for="size_1">Small</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_2" value="medium" />
+                    <label for="size_2">Medium</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_3" value="large" />
+                    <label for="size_3">Large</label>
+                </p>
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+      
+
+    </body>
+</html>
+
+
+
+<!-- Học về git -->
+<!-- 1. Tạo ra database git để theo dõi file -->
+
+<!-- Câu lệnh: git init -->
+
+
+<!-- 2. Thêm file vào stagging để commit -->
+<!-- Câu lệnh: git add -->
+
+
+<!-- 3. commit những file được add -->
+<!-- git commit -m "init commit" -->
+
+<!-- 4. Liên kết với remote repository -->
+<!-- git remote add origin https://github.com/dovietduc/git_demo_basic.git -->
+
+<!-- 5. Tạo ra nhánh mới -->
+<!-- git branch -M main -->
+
+<!-- 6. Đẩy code lên remote -->
+<!-- git push origin main -->
+
+<!-- 7. Lấy code từ remote về -->
+<!-- git pull origin main -->
