@@ -1,0 +1,111 @@
+/* chọn theo tag name */
+p {
+    color: brown;
+}
+
+/* chọn theo class name */
+.good {
+    color: green;
+}
+
+/* chọn theo id */
+#blue {
+    color: blue;
+}
+
+/* chọn theo cha con */
+ul li {
+    color: rgb(1, 10, 100);
+}
+/* Chọn theo cha con trực tiếp */
+ul > li {
+    color: hsl(240, 100%, 60%);
+}
+/* Độ ưu tiên: ID > class > tag name */ 
+.bold {
+    font-weight: bold;
+}
+
+
+/* 2. Các đơn vị phổ biến sử dụng cho value */
+/* 2.1 đơn vị px */
+/* 2.2 Tìm hiểu đơn vị value của mầu sắc */
+/* 2.2.1 color keyword */
+/* 2.2.2 sử dụng mã thập lục phân */
+/* 0123456789abcdef R G B */
+/* 2.2.3 sử dụng hàm rgb */
+/* 2.2.4 Sử dụng hàm hsl */
+
+
+/* 3. Tìm hiểu về box model */
+.box {
+    background: #ccc;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+
+    /* Nếu 4 chiều cùng 1 padding */
+    /* padding: 20px; */
+    /* Nếu 2 chiều trên dưới cùng 1 padding, trái phải cùng 1 padding */
+    /* padding: 20px 10px; */
+    /* Nếu trái phải có cùng giá trị */
+    /* padding: 20px 10px 15px; */
+    /* Nếu trên dưới trái phải đều phải khác nhau */
+    padding: 20px;
+    border: 2px dashed brown;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tính toán kích thước thực tế hộp sử dụng trong container */
+/* width: Tương đương content box */
+/* box-sizing: content-box */
+/* width: kích thước theo content box */
+/* chiều rông thực tế box: width + 2 x 20 + 2 x 2 = 244px */
+/* chiều cao thực tế của box: 200 + 40 + 4 = 244px */
+/* chiều rộng thực tế để căn chỉnh layout */
+/* width layout co margin = width thuc te + 2 x 20 = 244 + 40 = 284px */
+
+/* 3.2 mô hình hộp thay thế */
+.box_alter {
+    background: #ccc;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+
+    /* mô hình hộp thay thế */
+    box-sizing: border-box;
+    border: 4px solid brown;
+    padding: 20px;
+}
+
+.container {
+   display: flex; 
+   flex-wrap: wrap;
+}
+
+.box1 {
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+    background: #ccc;
+    border: 2px dashed brown;
+    height: 200px;
+    padding: 20px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box2 {
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+    background: #f2a8a8;
+    border: 2px dashed blue;
+    padding: 20px;
+    height: 200px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
