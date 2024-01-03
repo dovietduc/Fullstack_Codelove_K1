@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split navigation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #c37676;
+        }
+        .main_nav {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .main_nav li {
+            list-style: none;
+        }
+        .main_nav li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            color: #fff;
+        }
+        .push {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+
+        <ul class="main_nav">
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Product</a>
+            </li>
+            <li>
+                <a href="">Ourteam</a>
+            </li>
+            <li class="push">
+                <a href="">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</body>
+</html>

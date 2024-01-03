@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List groups</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .list_group {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+           
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .list_group li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 7px;
+            align-items: center;
+            border-top: 1px solid #ccc;
+        }
+        .list_group li span {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            background: brown;
+            border-radius: 50%;
+            color: #fff;
+        }
+
+        .list_group li:first-child {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="list_group">
+        <li>
+            Item One
+            <span class="badge">2</span>
+        </li>
+        <li>
+            Item Two
+            <span class="badge">10</span>
+        </li>
+        <li>
+            Item Three
+            <span class="badge">20</span>
+        </li>
+        <li>
+            Item Four
+            <span class="badge">0</span>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.container {
+    width: 500px;
+    border: 2px dashed brown;
+
+    /* thuộc tính biến div thành flex container */
+    display: flex;
+    /* căn chỉnh các items theo trục chính */
+    justify-content: flex-start;
+    /* Nếu các items quá 100% thì xuống hàng */
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    background: #ccc;
+    border: 1px solid lightcoral;
+    box-sizing: border-box;
+}
+
+
+/* 2. căn chỉnh các flex items theo trục chính */
+/* justifi-content */
+
+.container_extra {
+    display: flex;
+    width: 500px;
+    border: 2px dashed brown;
+    height: 400px;
+
+    /* căn chỉnh flex item theo phương thằng đứng */
+    align-items: center;
+}
+
+.box_extra {
+    width: 100px;
+    background: #ccc;
+    border: 1px solid lightcoral;
+}
+
+
+/* 3. flex-wrap */
