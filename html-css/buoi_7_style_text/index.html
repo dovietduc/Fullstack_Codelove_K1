@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style To Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            width: 500px;
+            height: 200px;
+            border: 1px dashed brown;
+
+            /* thuộc tính xác định kiểu font chữ */
+            font-family: Roboto, sans-serif;
+            /* thuộc tính xác định kích cỡ chữ */
+            font-size: 20px;
+            /* Thuộc tính xác định độ đậm nhạt của chữ */
+            font-weight: 600;
+            /* Kiểu dáng chữ */
+            font-style: italic;
+
+            /* Biến đổi text */
+            text-transform: capitalize;
+            /* text layout */
+            text-align: left;
+            /* thay đổi mầu sắc của text */
+            color: brown;
+            /* thuộc tính trang trí text */
+            text-decoration: none;
+
+        }
+        div {
+            /* width: 300px; */
+            border: 1px dashed brown;
+        }
+        div span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            border: 1px dashed brown;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 1. Các thuộc tính css liên quan đến text -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Saepe laborum quia unde fugiat necessitatibus rerum maxime quo,
+        mollitia enim id, consequatur quidem rem repellendus quas quis, 
+        dolores ducimus adipisci consectetur!
+    </p>
+
+    <!-- 2. Tại sao chúng ta cần display: inline-block và khi nào chúng ta nên sử dụng -->
+
+    <hr/>
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        At explicabo ratione nisi non <span>span here!</span> 
+    </div>
+
+    <!-- 3. Quy tắc chung để chúng ta ra một web tiêu chuẩn -->
+    <hr/>
+    <div class="container">
+        <h2>Đây là tiêu đề web</h2>
+        <h2>Đây là tiêu đề web</h2>
+        <h2>Đây là tiêu đề web</h2>
+        <h2>Đây là tiêu đề web</h2>
+        <h2>Đây là tiêu đề web</h2>
+    </div>
+
+    <!-- 4. Thừa hưởng (inherit ) css -->
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    
+</body>
+</html>
