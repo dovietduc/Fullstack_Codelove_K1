@@ -1,0 +1,17 @@
+body {
+    --color-red: red;
+    --color-blue: blue;
+}
+
+.first p {
+    color: var(--color-blue);
+    --color-green: green;
+}
+
+.first p span {
+    color: var(--color-green);
+}
+.second p {
+    color: var(--color-green);
+
+}

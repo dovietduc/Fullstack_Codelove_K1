@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed brown;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+/* phần chung button */
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+/* style phần riêng */
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+.btn-secondary {
+    color: #fff;
+    background: #6c757d;
+}
+.btn-success {
+    color: #fff;
+    background: #28a745;
+}
+.btn-danger {
+    color: #fff;
+    background: #dc3545;
+}
+.btn-warning {
+    color: #fff;
+    background: #ffc107;
+}

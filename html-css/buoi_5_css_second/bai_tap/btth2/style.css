@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h2 {
+    padding: 20px 0;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+.full_menu {
+    background: rgb(181, 174, 174);
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+   
+}
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 16px;
+    color: #323030;
+}

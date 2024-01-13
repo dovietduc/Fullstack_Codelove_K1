@@ -1,0 +1,230 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* reset css */
+
+/* config default inherit */
+:root {
+    --color-white: #fff;
+    --color-blue-lighter: #f4f9fc;
+    --color-grey: #ddd;
+    --color-red: #ff324d;
+    --color-black: #212529;
+    --color-yellow: #f6bc3e;
+    --color-green: #388e3c;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+/* giới hạn lề cho web */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding: 0 12px;
+}
+/* ========= start header ======== */
+/* 1. layout */
+header {
+    padding: 12px 0;
+    background: #fff;
+    position: relative;
+    z-index: 999;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menus {
+    display: flex;
+    align-items: center;
+}
+.menus .pages_link {
+    display: flex;
+}
+.menus .search {
+    margin-right: -12px;
+    margin-left: 10px;
+    display: flex;
+}
+/* 1. layout */
+
+/* 2. căn chỉnh chi tiết bên trái logo */
+.logo a {
+    display: block;
+}
+.logo a img {
+    display: block;
+}
+.pages_link li a {
+    display: inline-block;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-weight: 500; 
+    transition: color 0.5s;
+}
+.pages_link li a:hover {
+    color: var(--color-red);
+}
+.search li i {
+    display: inline-block;
+    padding: 12px 10px;
+    transition: color 0.5s;
+} 
+.search li i:hover {
+    color: var(--color-red);
+    cursor: pointer;
+}
+/* 2. căn chỉnh chi tiết bên trái logo */
+/* ======= end header =========== */
+
+/* ======= start style sidebar ====== */
+.banner-full {
+    background: var(--color-blue-lighter);
+}
+.sidebar {
+    display: flex;
+    align-items: center;
+}
+.image-feature {
+    margin-top: -40px;
+    width: 40%;
+}
+.banner-content {
+    width: calc(60% - 8%);
+    margin-left: 8%;
+    padding-left: 20px;
+}
+.image-feature a {
+    display: block;
+    text-align: center;
+}
+.image-feature a img {
+    vertical-align: middle;
+}
+.banner-content span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--color-red);
+}
+.banner-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.banner-content h5 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.btn {
+    display: inline-block;
+    padding: 13px 34px;
+    border: 1px solid var(--color-red);
+    transition: all 0.5s;
+}
+.btn-warning {
+    background: var(--color-red);
+    color: var(--color-white);
+}
+.btn-warning:hover {
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+    background: transparent;
+}
+/* ======= end style sidebar ========= */
+
+/* style products */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+.product-list .product-item {
+    width: calc(25% - 22px);
+    margin-left: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+}
+.product-item a {
+    display: block;
+}
+.product-item a img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+.product-full h2.title {
+    font-size: 30px;
+    padding: 40px 0;
+    text-align: center;
+}
+.product-info {
+    padding-left: 15px;
+}
+.product-info h6 a {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+   font-size: 15px; 
+   color: var(--color-black);
+   font-weight: 500;
+}
+.price-wrapp {
+    margin-left: -5px;
+}
+.product-info span {
+    display: inline-block;
+    margin-left: 5px;
+}
+.product-info .price {
+    color: var(--color-red);
+    font-weight: 600;
+}
+.product-info .price-origin {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.product-info .sale-off {
+    color: var(--color-green);
+    font-size: 14px;
+}
+.star {
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+.star i {
+    font-size: 15px;
+    color: var(--color-yellow);
+}
+.product-item .image {
+    position: relative;
+}
+.product-item .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+.product-item:hover .image::before {
+    opacity: 1;
+}
+/* style products */

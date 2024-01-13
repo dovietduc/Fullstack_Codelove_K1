@@ -1,0 +1,103 @@
+/* 1. reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* config mầu sắc vào trong biến */
+:root {
+    --color-white: #fff;
+    --color-blue-lighter: #f4f9fc;
+    --color-grey: #ddd;
+    --color-red: #ff324d;
+    --color-black: #212529;
+    --color-yellow: #f6bc3e;
+    --color-green: #388e3c;
+    --color-grey-lighter: #687188;
+}
+
+/* 2. config mặc định css dựa trên tính chất inherit */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+/* Các bước style */
+/* 1. layout (định vị mã các phần tử đúng vị trí trên web)
+2. style chi tiết từng phần
+3. style phần lớn trước (box model)
+4. style chi tiết text (style to text) */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding: 0 10px;
+}
+/* ======== style header ========= */
+.pages-link li a.active {
+    color: var(--color-red);
+}
+header {
+    padding: 13px 0;
+    background: var(--color-white);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-right {
+    align-items: center;
+    display: flex;
+}
+.menu-right .pages-link {
+    display: flex;
+}
+.menu-right .search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+
+/* style chi tiết logo */
+.logo a {
+    display: block;
+    width: 182px;
+}
+.logo a img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+/* style chi tiết phần menu bên phải */
+.pages-link li a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--color-black);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.pages-link li a:hover {
+    color: var(--color-red);
+}
+.search li i {
+    display: inline-block;
+    padding: 10px;
+}
+.search li i:hover{
+    cursor: pointer;
+    color: var(--color-red);
+}
+/* ======== style header ========= */
+
+
