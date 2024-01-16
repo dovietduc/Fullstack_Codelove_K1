@@ -100,4 +100,54 @@ nav {
 }
 /* ======== style header ========= */
 
+/* style banner */
+.banner-full {
+    background: var(--color-blue-lighter);
+}
+.banner {
+    display: flex;
+    align-items: center;
+}
+.banner .image {
+    width: 40%;
+}
+.banner .content {
+    width: 60%;
+    margin-left: 100px;
+}
+.banner .image img {
+    vertical-align: middle;
+}
+.banner .content span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--color-red);
+}
+.banner .content h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.banner .content h5 {
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 34px;
+}
+.btn-warning {
+    background: var(--color-red);
+    color: var(--color-white);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--color-red);
+}
+.banner .content a:hover {
+    background: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+/* style banner */
+
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class and pseudo-element</title>
+
+    <style>
+
+        /* 1. pseudo-classs? */
+
+        div p:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+        div p:last-child {
+            color: blue;
+        }
+
+        div p:nth-child(2) {
+            color: green;
+        }
+
+        div p:hover {
+            color: aqua;
+        }
+
+        /* 2. pseudo-element? */
+        .elements .first {
+            color: red;
+        }
+
+        .elements .first::before {
+            content: 'before';
+        }
+        .elements .first::after {
+            content: 'after';
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores.1</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores.1</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores.2</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores.3</p>
+    </div>
+
+    <hr/>
+
+    <div class="elements">
+        <p class="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.
+        </p>
+    </div>
+
+</body>
+</html>
