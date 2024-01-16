@@ -150,4 +150,21 @@ nav {
 }
 /* style banner */
 
+/* style product */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+.product-list .product-item {
+    width: calc(25% - 24px);
+    margin-left: 24px;
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.1);
+    margin-bottom: 27px;
+}
+.product-list .product-item img {
+    max-width: 100%;
+}
+/* style product */
+
 
