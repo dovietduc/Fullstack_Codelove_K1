@@ -164,7 +164,103 @@ nav {
 }
 .product-list .product-item img {
     max-width: 100%;
+    vertical-align: middle;
+}
+.product-full h2 {
+    margin: 50px 0;
+    font-size: 32px;
+    text-align: center;
+}
+.product-list .product-info {
+    padding: 17px;
+}
+.product-list .product-info h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product-list .product-info h5:hover {
+    cursor: pointer;
+    color: var(--color-red);
+}
+.product-info .price-info span {
+    display: inline-block;
+    margin-left: 3px;
+}
+.product-info .price-info span:first-child {
+    color: var(--color-red);
+    font-size: 15px;
+    font-weight: 500;
+}
+.product-info .price-info span:nth-child(2) {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.product-info .price-info span:last-child {
+    font-size: 14px;
+    color: var(--color-green);
+}
+.product-info .product-star {
+    margin-top: 8px;
+}
+.product-info .product-star i {
+    color: var(--color-yellow);
+    font-size: 14px;
+}
+.product-list .product-item .image {
+    position: relative;
+}
+.product-list .product-item .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.product-list .product-item:hover .image::before {
+    opacity: 1;
 }
 /* style product */
+
+/* style service */
+.service-full {
+    margin: 50px 0;
+}
+.services {
+    display: flex;
+}
+.services .service-item {
+    width: 33.3333%;
+    padding: 0 40px;
+    text-align: center;
+    position: relative;
+}
+.services .service-item::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background: #ccc;
+    top: 15%;
+    bottom: 15%;
+}
+.services .service-item:last-child::before {
+    content: normal;
+}
+.services .service-item .image span {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.services .service-item h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+/* style service */
 
 

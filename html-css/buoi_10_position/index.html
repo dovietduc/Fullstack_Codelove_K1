@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position</title>
+
+        <style>
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background: lightcoral;
+                padding: 20px;
+            }
+
+            .container p {
+                padding: 20px;
+            }
+            .container p:first-child {
+                background: lightblue;
+            }
+            .container p:nth-child(2) {
+                /* position: relative;
+                top: 20px;
+                left: 20px; */
+                background: lightgoldenrodyellow;
+            }
+            .container p:last-child {
+                background: lightpink
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- 1. Khi sử dụng position absolute cho một phần tử và sau đó kiểm tra không có phần tử cha nào có thuộc tính postion khác static
+        thì nó sẽ lấy phần tử html để xác định khoảng cách top, left... -->
+
+        <!-- 2. Nếu có cha gần nhất có thuộc tính position khác static, thường để là relative thì khoảng cách top, left... sẽ được tính -->
+        <!-- toán theo phần tử cha này -->
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est 1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est 2</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est 3</p>
+        </div>
+
+    </body>
+</html>
