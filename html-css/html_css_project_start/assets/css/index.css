@@ -263,4 +263,122 @@ nav {
 }
 /* style service */
 
+/* style subcrible */
+.subcrible {
+    display: flex;
+    align-items: center;
+}
+.subcrible .subcrible-title {
+    width: 50%;
+} 
+.subcrible form {
+    width: 50%;
+    position: relative;
+} 
+.subcrible form input {
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 18px 16px;
+    font-size: 16px;
+}
+.subcrible form input:focus {
+    outline: none;
+}
+.subcrible form button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 18px 38px 15px 38px;
+    display: inline-block;
+    color: var(--color-white);
+    background: var(--color-black);
+    margin-top: -1px;
+    font-size: 16px;
+}
+.subcrible form button:hover {
+    cursor: pointer;
+}
+
+.subcrible-full {
+    background: var(--color-red);
+    padding: 50px 0;
+}
+.subcrible-full h3 {
+    color: var(--color-white);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+/* style subcrible */
+
+/* style footer top */
+.footer-top-full {
+    background: var(--color-black);
+    padding: 100px 0;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-links ul {
+    display: flex;
+}
+.social-links {
+    width: 25%;
+    padding-right: 30px;
+}
+.social-links, .contact-info {
+    width: 25%;
+}
+.useful-links, .category, .my-account {
+    width: 16.66666%;
+}
+
+.footer-top-full a, .footer-top-full span, .footer-top-full p, .footer-top-full i, .footer-top-full h6 {
+    color: var(--color-white);
+    transition: all 0.5s;
+}
+
+.social-links img {
+    vertical-align: middle;
+}
+.social-links a {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+.social-links p {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+.social-links ul li i {
+    display: inline-block;
+    padding: 8px;
+}
+.social-links ul li i:hover {
+    color: var(--color-red);
+    cursor: pointer;
+}
+.useful-links ul li, .category ul li, .my-account ul li, .contact-info ul li {
+    margin-bottom: 16px;
+}
+.useful-links h6, .category h6, .my-account h6, .contact-info h6 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.footer-top-full a, .footer-top-full span, .footer-top-full p {
+    font-size: 14px;
+}
+.footer-top-full span {
+    line-height: 1.8;
+}
+.footer-top-full a:hover {
+    color: var(--color-red);
+}
+/* style footer top */
+
 
