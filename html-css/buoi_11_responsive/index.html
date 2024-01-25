@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive</title>
+
+        <style>
+            .wrapper {
+                background: lightblue;
+            }
+
+            @media screen and (max-width: 576px) {
+                .wrapper {
+                    background: lightcoral;
+                }
+            }
+
+            /* @media screen and (min-width: 768px) {
+                .wrapper {
+                    background: lightgoldenrodyellow;
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                .wrapper {
+                    background: lightpink;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                .wrapper {
+                    background: limegreen;
+                }
+            } */
+
+            /* 1. đi từ desktop xuống mobile */
+
+            /* .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+            }
+            .box1 {
+                padding: 20px;
+                background: lightcoral;
+                width: 30%;
+                margin-right: 5%;
+            }
+            .box2 {
+                padding: 20px;
+                background: lightgreen;
+                width: 60%;
+                margin-right: 5%;
+            }
+
+            /* responsive */
+            /* @media screen and (max-width: 576px) {
+                .container {
+                    display: block;
+                }
+                .box1, .box2 {
+                    width: 100%;
+                }
+            } */
+
+            /* đi từ mobile đến desktop */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .box1 {
+                padding: 20px;
+                background: lightcoral;
+            }
+            .box2 {
+                padding: 20px;
+                background: lightgreen;
+            }
+
+            /* responsive */
+            @media screen and (min-width: 576px) {
+                .container {
+                    display: flex;
+                }
+                .box1 {
+                    width: 30%;
+                    margin-right: 5%;
+                }
+                .box2 {
+                    width: 60%;
+                    margin-right: 5%;
+                }
+            }
+
+            .logo {
+                width: 200px;
+                border: 1px solid red;
+            }
+
+            .logo img {
+                max-width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- 1. Responsive Nó Được Tạo Mặc Định Nếu Chỉ Có Html -->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Quae, tenetur optio eaque alias facilis animi in quia deleniti, 
+            nisi beatae hic ad, qui ab aspernatur a totam facere perferendis incidunt!
+        </p>
+        <hr/>
+
+        <!-- 2. media query -->
+        <div class="wrapper">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque natus perspiciatis voluptates voluptate odit animi, suscipit quaerat commodi quia recusandae?
+        </div>
+
+        <hr/>
+        <!-- 3. responsive với flexbox -->
+
+        <div class="container">
+            <div class="box1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur ducimus cum, possimus sed blanditiis placeat dicta asperiores officia earum numquam.
+            </div>
+            <div class="box2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur ducimus cum, possimus sed blanditiis placeat dicta asperiores officia earum numquam.
+            </div>
+        </div>
+
+        <hr/>
+        <!-- 4. responsive cho media -->
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1682685797661-9e0c87f59c60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        
+
+    </body>
+</html>
