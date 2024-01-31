@@ -10,6 +10,11 @@ ul {
 a {
     text-decoration: none;
 }
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
 /* config mầu sắc vào trong biến */
 :root {
     --color-white: #fff;
@@ -106,13 +111,14 @@ nav {
 }
 .banner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .banner .image {
     width: 40%;
 }
 .banner .content {
-    width: 60%;
+    width: calc(60% - 100px);
     margin-left: 100px;
 }
 .banner .image img {
@@ -232,6 +238,7 @@ nav {
 }
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 .services .service-item {
     width: 33.3333%;
@@ -266,6 +273,7 @@ nav {
 /* style subcrible */
 .subcrible {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .subcrible .subcrible-title {
@@ -382,3 +390,101 @@ nav {
 /* style footer top */
 
 
+
+/* responsive css */
+@media screen and (max-width: 992px) {
+    
+    /* product */
+    .product-list .product-item {
+        width: calc(33.3333% - 24px); 
+    }
+    /* service */
+    .services .service-item {
+        width: 100%;
+    }
+    .services .service-item::before {
+        content: normal;
+    }
+    /* footer */
+    .social-links, .my-account {
+        width: 50%;
+    }
+    .useful-links, .category {
+        width: 25%;
+    }
+    .contact-info {
+        width: 33.33333%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .container .row > * {
+        width: 100%;
+    }
+    .menu-right .pages-link {
+        display: none;
+    }
+    /* banner */
+    .banner .content {
+        margin-left: 0px;
+        text-align: center;
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .banner .image {
+        order: 2;
+    }
+    .banner .content h2 {
+        font-size: 22px;
+    }
+    /* subcrible */
+    .subcrible-full h3 {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+    .subcrible-full {
+        padding: 15px 0px;
+    }
+    .useful-links h6 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .product-full h2 {
+        margin: 20px 0;
+        font-size: 22px;
+    }
+
+    /* product */
+    .product-list .product-item {
+        width: calc(50% - 24px); 
+    }
+     /* footer */
+    .social-links {
+        width: 100%;
+    }
+    .row .useful-links, .row .category, .row .contact-info, .row .my-account{
+        width: 50%;
+    }
+    .category h6 {
+        margin-top: 20px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    /* footer */
+    .container .footer-top > * {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* product */
+    .product-list .product-item {
+        width: calc(100% - 24px); 
+    }
+}
+/* responsive css */
