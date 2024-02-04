@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1220px;
+    padding: 20px;
+    background: #ccc;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-bottom: 30px;
+
+    --bs-gutter-x: 1.5rem;
+}
+
+.row > * {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: calc(0.5 * var(--bs-gutter-x));
+    padding-right: calc(0.5 * var(--bs-gutter-x));
+    
+}
+
+
+.item {
+    background: brown;
+    height: 50px;
+    color: #fff;
+}
+@media screen and (min-width: 576px) {
+    .g-sm-1 {
+        --bs-gutter-x: 4rem;
+    }
+    .col-sm-1 {
+        width: 8.333333333333333%;
+    }
+    .col-sm-2 {
+        width: 16.66666666666667%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33333333333333%;
+    }
+    .col-sm-5 {
+       width: 41.66666666666667%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33333333333333%;
+    }
+    .col-sm-8 {
+        width: 66.66666666666667%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33333333333333%;
+    }
+    .col-sm-11 {
+        width: 91.66666666666667%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-1 {
+        width: 8.333333333333333%;
+    }
+    .col-md-2 {
+        width: 16.66666666666667%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+    .col-md-5 {
+       width: 41.66666666666667%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33333333333333%;
+    }
+    .col-md-8 {
+        width: 66.66666666666667%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.33333333333333%;
+    }
+    .col-md-11 {
+        width: 91.66666666666667%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+
