@@ -78,3 +78,5 @@ Ban đầu giả sử a1 là số lớn nhất (được lưu trong giá trị m
 Luyện tập sử dụng Pseudo-code và Flowchart để mô tả các giải thuật có cấu trúc lặp.
 
 S = 1 + 2 + 3 + 4 (N = 4)
+
+
