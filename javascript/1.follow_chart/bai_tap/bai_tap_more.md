@@ -36,6 +36,7 @@ Tính S(n) = 1 x 2 x 3 x ... x n;
 Tính T(x, n) = x^n;
 
 11. Vẽ lưu đồ thuật toán cho tính toán sau:
-
+            i     i+1   i+1
 Tính S(n) = 1 + 1x2 + 1x2x3 + ...+ 1x2x3x...xn;
 S(3) = 1 + 1x2 + 1x2x3;
+
