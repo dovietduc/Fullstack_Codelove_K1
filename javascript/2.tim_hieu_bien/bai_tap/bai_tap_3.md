@@ -2,7 +2,7 @@
 
 How to Convert a String to a Number in JavaScript (search google)
 
-# Tìm hiểu quy tắc đặt tên biến js
+# Tìm hiểu quy tắc đặt tên biến js và giải thích để nhớ theo biến - value
 
 
 # giá trị nhận được của hàm promp là kiểu dữ liệu nào?
