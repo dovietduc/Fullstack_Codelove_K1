@@ -81,3 +81,5 @@ do {
     console.log('lam dc 1 lan ke ca sai');
 } while(k < 1);
 
+
+
