@@ -79,8 +79,5 @@ while(j <= 8) {
 var k = 2;
 do {
     console.log('lam dc 1 lan ke ca sai');
-} while(k < 1) {
-
-}
-
+} while(k < 1);
 
