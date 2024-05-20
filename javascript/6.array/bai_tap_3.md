@@ -28,6 +28,6 @@ Kết quả mẫu:
 
 # Bài 4: Viết một chương trình để đếm số từ trong một chuỗi.
 
-# Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+# Bài 5 (lưu ý): Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -- for
 
 # Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )

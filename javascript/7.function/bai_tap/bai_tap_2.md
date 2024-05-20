@@ -33,7 +33,15 @@ foot = 3.279 * meter
 
 Một chuỗi palindrome là một từ được đọc theo thứ tự xuôi, ngược đều giống nhau. Ví dụ, rotor và redder là các chuỗi palindrome, nhưng motor thì không phải.
 
+(LƯU Ý)
+
+
+
+
 # Cho người dùng nhập vào chuỗi kí tự và viết hàm kiểm tra xem đó có phải chuỗi kí tự đối xứng không
+(LƯU Ý)
+
+
 
 # Tạo hàm tính tổng các phần tử trong mảng
 

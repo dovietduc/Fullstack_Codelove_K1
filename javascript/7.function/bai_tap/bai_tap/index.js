@@ -1,12 +1,19 @@
-const courses = {
-    name1: 'javascript',
+const p1 = document.querySelector('p.first');
 
-    getName: function() {
-        console.log(courses);
-    }
+// p1.onclick = function() {
+//     alert(1);
+// }
+
+// p1.onclick = function() {
+//     alert(2);
+// }
+
+p1.addEventListener('click', function(){
+    alert(3);
+});
 
 
-};
+p1.addEventListener('click', function(){
+    alert(4);
+});
 
-courses.getName();
-console.log(name);

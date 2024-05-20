@@ -22,7 +22,11 @@ Ví dụ nếu bạn nhập vào 245468 thì kết quả của chương trình s
 
 Ví dụ: nếu bạn nhập vào chuỗi 'Keep Calm And Code On' kết quả của chương trình là 'kEEP cALM aND cODE oN'
 
+
+
+
 # [Bài tập] Từ điển
+
 
 Phát triển một ứng dụng từ điển đơn giản. Ứng dụng cho phép tra cứu các từ tiếng Anh sang tiếng Việt. Danh sách các từ được lưu trữ trong các mảng.
 

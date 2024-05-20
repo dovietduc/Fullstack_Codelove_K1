@@ -1,21 +1,87 @@
-let number = prompt('Xin nhập vào giá trị số');
+// // Input
+const arrInput = [3, 7, 0, 2];
+// let inputNumber = +prompt('Nhap gia tri');
 
-let numberFirst = number[0];
-let arrConvert = [numberFirst];
+// // Process
+// let indexFind = arrInput.indexOf(inputNumber);
 
-let srCom = number[0];
-for(let i = 1; i < number.length; i++) {
 
-    if(number[i] % 2 === 0 && number[i - 1] % 2 === 0) {
-        srCom = srCom + '-' + number[i];
-        // arrConvert.push('-', number[i]);
+// // Output
+// console.log(indexFind);
+
+
+// indexOf -- khi value được tìm thấy trong mảng thì sẽ trả về index đầu tiên của value tìm thấy
+
+// function indexOfCustom(arrInputParam, inputFind) {
+//     // tìm index của 1 nếu có trong mảng
+//     // không có value tồn tại trong mảng trả về -1
+//     let indexFind = -1;
+//     for(let i = 0; i < arrInputParam.length; i++) {
+        
+//         if(arrInputParam[i] === inputFind) {
+//             indexFind = i;
+//             break;
+//         }
+//     }
+
+//     return indexFind;
+// }
+
+// let backResult = indexOfCustom(arrInput, 2);
+// console.log(backResult);
+
+// let max = arrInput[0];
+// for(let i = 1; i < arrInput.length; i++) {
+
+//     if(arrInput[i] > max) {
+//         max = arrInput[i];
+//     }
+
+// }
+
+// console.log(max);
+
+let str = 'Aa BC d';
+// 1. hoa thành thường
+// 2. thường thành hoa
+// 3. kí tự khác để nguyên
+
+let capitalizeLetter = ['A', 'B', 'C', 'D'];
+let lowercaseLetter = ['a', 'b', 'c', 'd'];
+
+// let strTe
+
+let arrConvert = [];
+
+for(let i = 0; i < str.length; i++) {
+
+    if(capitalizeLetter.indexOf(str[i]) !== -1) {
+        arrConvert.push(str[i].toLocaleLowerCase());
+    } else if(lowercaseLetter.indexOf(str[i]) !== -1) {
+        arrConvert.push(str[i].toUpperCase());
     } else {
-        srCom = srCom + number[i];
-        // arrConvert.push(number[i]);
+        arrConvert.push(str[i]);
     }
 }
 
-console.log(srCom);
+console.log(arrConvert.join(''));
+
+
+
+arrInput.sort(
+    function(a, b) {
+        return b - a;
+    }
+);
+
+console.log(arrInput);
+
+
+
+
+
+
+
 
 
 

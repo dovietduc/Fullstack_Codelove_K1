@@ -7,7 +7,8 @@
 
 # Bài 3: Viết chương trình Javascript cho người dùng nhập vào chuỗi số bất kỳ được ngăn cách bởi dấu “,”. Sau đó sắp xếp chuỗi số đó từ bé đến lớn bằng 2 cách (sử dụng hàm sort và không dùng hàm sort)
 
-# Bài 4: Cho một mảng có sẵn. Tìm phần tử xuất hiện nhiều nhất trong mảng và in ra chúng
+# (lưu ý) Bài 4: Cho một mảng có sẵn. Tìm phần tử xuất hiện nhiều nhất trong mảng và in ra chúng
+(-- forarrInput)
 
 # Bài 5: Tạo một ứng dụng to do list
 
