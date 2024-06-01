@@ -1,0 +1,33 @@
+body {
+    margin-top: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box_wrapper {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed brown;
+    padding: 30px;
+    background: lightgray;
+}
+.box_wrapper .box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid brown;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.box_wrapper .box:first-child {
+    background: lightgray;
+}
+
+.box_wrapper .box:nth-child(2) {
+    background: lightgreen;
+}
+
+.box_wrapper .box:last-child {
+    background: lightsalmon;
+}
