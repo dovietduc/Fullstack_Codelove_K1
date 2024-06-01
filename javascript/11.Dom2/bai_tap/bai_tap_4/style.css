@@ -1,0 +1,56 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hide {
+    display: none;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dots button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background: #bbb;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.dots .active {
+    background: brown;
+}
+
+.slider_top {
+    position: relative;
+}
+
+.icon_click button {
+    cursor: pointer;
+}
+
+.icon_click button:first-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.icon_click button:last-child {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+} 
