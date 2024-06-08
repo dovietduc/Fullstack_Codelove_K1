@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background: red;
+    padding: 20px 10px;
+    display: flex;
+}
+
+form input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+form button {
+    width: 20%;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    background: #ccc;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul li button {
+    padding: 6px 12px;
+    border: none;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+    background: rgba(0,0,0,.05);
+}
+ul li:nth-child(even) {
+    background: #fff;
+}
