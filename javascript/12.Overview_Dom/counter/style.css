@@ -1,0 +1,37 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 6px 10px;
+    background: lightgrey;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.box_flex {
+    display: flex;
+    padding: 30px;
+    background: lightgray;
+}
+.box {
+    width: 300px;
+    height: 150px;
+    background: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+.box:last-child {
+    background: lightsalmon;
+    margin-left: 20px;
+}

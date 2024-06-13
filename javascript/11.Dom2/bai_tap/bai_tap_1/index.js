@@ -4,18 +4,33 @@ const pElement = document.querySelector('.content_wrapper p');
 const buttonShowTextSelector = document.querySelector('.show_text');
 const buttonToggleTextSelector = document.querySelector('.toogle_text');
 
+let isShow = true;
+
 
 // khai báo hàm xử lí click
 function handleClickHideText() {
-    pElement.classList.add('hide');
+    isShow = false;
+    renderResult();
 }
 
 function handleClickShowText() {
-    pElement.classList.remove('hide');
+    isShow = true;
+    renderResult();
 }
 
 function handleClickToggleText() {
-    pElement.classList.toggle('hide');
+    isShow = !isShow;
+    renderResult();
+}
+
+function renderResult() {
+    let htmlResult = '';
+    if(isShow) {
+        htmlResult = `<p>This is text This is text</p>`;
+    } else {
+        htmlResult = `<p class="hide">This is text This is text</p>`;
+    }
+    document.querySelector('.result').innerHTML = htmlResult;
 }
 
 
