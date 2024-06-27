@@ -1,33 +1,60 @@
-// phần khai báo selector
-// Event bubbling
-const boxAll = document.querySelectorAll('.box');
+// 1. render ra giao diện --- bài toán đã có -- copy -- paste
+
+// 2. xác định ra dữ liệu lưu trữ -- dựa vào yêu cầu bài toán (giải quyết bài toán)
 
 
+// 3. tiến hành coding
+
+const container = document.querySelector('.container');
 const colors = [
     'lightgray',
     'lightgreen',
     'lightsalmon'
 ];
 
+// 1 biến thay đổi theo mầu sắc
+let colorChange = 'lightgray';
 
-// phần thứ 2 là các hàm khai báo
-// lấy ra box 1
-function changeBackground(color) {
-    return function() {
-        boxWrapper.setAttribute('style', `background: ${color}`);
+
+
+function renderBoxView() {
+    let htmlBox = '';
+    for(let i = 0; i < colors.length; i++) {
+        htmlBox = htmlBox + `<div class="box" data-color="${colors[i]}">
+
+                            </div>`;
     }
 
+    const htmlRender = 
+    `
+        <div class="box_wrapper" style="background: ${colorChange}">
+          ${htmlBox}
+        </div>
+    `;
+
+    container.innerHTML = htmlRender;
+}
+
+
+function handleChangeColor(event) {
+    const clicked = event.target;
+
+    if(clicked.classList.contains('box')) {
+        // 1. lấy ra mầu sắc của box click
+        const colorClick = clicked.getAttribute('data-color');
+        colorChange = colorClick;
+        // 2. thay đổi biến theo mầu sắc box click
+    }
+
+
+
+    // render lại giao diện
+    renderBoxView();
 }
 
 
 
-// Sự kiện được liệt kê ở đây
-// vấn đề không thể làm thế này?
-const boxWrapper = document.querySelector('.box_wrapper');
-for(let i = 0; i < boxAll.length; i++) {
-    boxAll[i].addEventListener('click', changeBackground(colors[i]));
-}
-// sự kiện hover chuột qua
-// for(let i = 0; i < boxAll.length; i++) {
-//     boxAll[i].addEventListener('mouseover', changeBackground);
-// }
+
+
+renderBoxView();
+container.addEventListener('click', handleChangeColor);

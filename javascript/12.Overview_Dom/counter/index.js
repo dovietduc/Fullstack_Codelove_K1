@@ -1,35 +1,21 @@
-// 1. khai báo selecttor
-const buttonIncreSelector = document.querySelector('.increment');
-const resultSpanSelector = document.querySelector('.result span');
-const buttonDecreSelector = document.querySelector('.decrement');
-const box1Selector = document.querySelector('.box1');
-const boxContainer = document.querySelector('.box_flex');
-
-let counter = 1;
 
 
+function initHandleCounter(oiptions) {
 
-function handleIncrement() {
-    counter++;
-    // thay đổi kết quả
-    renderResult();
-}
-
-function handleDecrement() {
-    counter--;
-    // thay đổi kết quả
-    renderResult();
-}
+    // định danh vùng của ứng dụng
+    const couterWrapperSelector = document.querySelector(`.${oiptions.container}`);
+    const buttonIncrementSelector = couterWrapperSelector.querySelector('.increment');
+    const spanSlelector = couterWrapperSelector.querySelector('span');
 
 
-// render giao diện
-function renderResult() {
-    const htmlResult = `<span>${counter}</span>`;
-    document.querySelector('.result').innerHTML = htmlResult;
-}
+    function handlIncrement() {
+        spanSlelector.innerHTML = +spanSlelector.innerHTML + 1;
+    }
 
-function handleClickBox() {
-    console.log(1);
+
+    buttonIncrementSelector.addEventListener('click', handlIncrement);
+
+
 }
 
 
@@ -37,14 +23,15 @@ function handleClickBox() {
 
 
 
-// thêm sự kiện
-buttonIncreSelector.addEventListener('click', handleIncrement);
-buttonDecreSelector.addEventListener('click', handleDecrement);
 
 
 
-boxContainer.addEventListener('click', handleClickBox);
+
+const couterWrapperObject = new initHandleCounter(
+    { container: 'couter_wrapper' }
+);
 
 
-
-// Event Bubbling
+const couterWrapperObject2 = new initHandleCounter(
+    { container: 'couter_wrapper_2' }
+);

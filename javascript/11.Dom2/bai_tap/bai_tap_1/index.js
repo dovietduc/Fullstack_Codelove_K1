@@ -1,41 +1,56 @@
-// selector
-const buttonHideTextSelector = document.querySelector('.hide_text');
-const pElement = document.querySelector('.content_wrapper p');
-const buttonShowTextSelector = document.querySelector('.show_text');
-const buttonToggleTextSelector = document.querySelector('.toogle_text');
-
+const container = document.querySelector('.container');
 let isShow = true;
 
 
-// khai báo hàm xử lí click
-function handleClickHideText() {
-    isShow = false;
-    renderResult();
+
+
+
+function renderHtmlView() {
+
+    let classChange = '';
+    if(!isShow) {
+        classChange = 'hide';
+    } 
+    const htmlView = `
+        <div class="content_wrapper">
+            <div class="result">
+                <p class="${classChange}">This is text This is text</p>
+            </div>
+            
+
+            <div class="button_wrapper">
+                <button class="hide_text">Hide Text</button>
+                <button class="show_text">Show Text</button>
+                <button class="toogle_text">Toogle Text</button>
+            </div>
+        </div>
+    `;
+
+    container.innerHTML = htmlView;
 }
 
-function handleClickShowText() {
-    isShow = true;
-    renderResult();
-}
 
-function handleClickToggleText() {
-    isShow = !isShow;
-    renderResult();
-}
-
-function renderResult() {
-    let htmlResult = '';
-    if(isShow) {
-        htmlResult = `<p>This is text This is text</p>`;
-    } else {
-        htmlResult = `<p class="hide">This is text This is text</p>`;
+function showHidetext(event) {
+    const clicked = event.target;
+    if(clicked.classList.contains('hide_text')) {
+        isShow = false;
+    } else if(clicked.classList.contains('show_text')) {
+        isShow = true;
+    } else if(clicked.classList.contains('toogle_text')) {
+        isShow = !isShow;;
     }
-    document.querySelector('.result').innerHTML = htmlResult;
+
+
+    // 2. render lại giao diện
+    renderHtmlView();
 }
 
 
 
-// thêm sự kiện
-buttonHideTextSelector.addEventListener('click', handleClickHideText);
-buttonShowTextSelector.addEventListener('click', handleClickShowText);
-buttonToggleTextSelector.addEventListener('click', handleClickToggleText);
+
+
+
+
+
+renderHtmlView(); 
+container.addEventListener('click', showHidetext);

@@ -15,8 +15,6 @@ function hideModal() {
 
 
 
-
-
 buttonSelector.addEventListener('click', showModal);
 close.addEventListener('click', hideModal);
 
