@@ -6,22 +6,89 @@ function CrudUser() {
 
     const [userAll, setUserAll] = React.useState(users);
     const [inputName, setInputName] = React.useState('');
+    const [isEditting, setIsEditting] = React.useState(false);
+    const [userEdditing, setUserEdditing] = React.useState('');
 
 
     const handleChangeName = (event) => setInputName(event.target.value);
 
     const handleSubmit = (event) => {
+
         event.preventDefault();
+        if(isEditting) {
+            // xử lí phần edit
+            // thay đổi dữ liệu mảng cần update
+            // map -> for -> update
+            // for -> 
+            const usersUpdate = userAll.map(
+                function(element) {
+                    // cần cập nhật name
+                    if(element.id === userEdditing.id) {
+                        return {
+                            id: element.id,
+                            name: inputName
+                        }
+                    } else {
+                        return element;
+                    }
+                }
+            );
+
+            // render lại giao diện
+            setUserAll(usersUpdate);
+            // set lại input name đến rỗng
+            setInputName('');
+            // set lại trạng thái là add
+            setIsEditting(false);
+            
+            return;
+        }
+        
+        
         const user = {
             id: crypto.randomUUID(),
             name: inputName
         }
         // tạo state mới
-        const userAllNew = [...userAll, user];
+        const userAllNew = [user, ...userAll];
         // render lại giao diện bao gồm phần tử mới
         setUserAll(userAllNew);
         // set lại value input đến rỗng
         setInputName('');
+    }
+
+    const handleDelete = (idUser) => {
+        // 1. lấy ra id cần xóa
+        console.log(idUser);
+        // 2. xóa phần tử trong mảng users với id đã nhận
+        const userFilterData = userAll.filter(element => element.id !== idUser);
+        // 3. render dữ liệu
+        setUserAll(userFilterData);
+
+    }
+
+    const handleShowFormEdit = (idUser) => {
+        // 1. thay đổi giao diện form submit(thay đổi text)
+        setIsEditting(true);
+        // 2. tìm ra object cần edit
+        const userEditting = userAll.find((element) => element.id === idUser);
+        // 3. đưa thông tin user name vào ô i
+        setInputName(userEditting.name);
+
+        // 4. lưu thông tin user đang edit đến state dành cho useEditting
+        setUserEdditing(userEditting);
+        
+    }
+
+
+    if(userAll.length === 0) {
+        return (
+            <div className="container">
+                <div className="row">
+                    <h2>Không Có Dữ Liệu User</h2>
+                </div>
+            </div>
+        )
     }
 
 
@@ -49,7 +116,9 @@ function CrudUser() {
                                     placeholder="Nhập tên"
 
                                 />
-                                <button className="btn btn-primary mt-3">Submit</button>
+                                <button className="btn btn-primary mt-3">
+                                    {isEditting ? 'Update' : 'Add'}
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -76,8 +145,19 @@ function CrudUser() {
                                         <th scope="row">{index + 1}</th>
                                         <td>{user.name}</td>
                                         <td>
-                                            <button className="btn btn-primary me-3">Edit</button>
-                                            <button className="btn btn-danger">Delete</button>
+                                            <button 
+                                                onClick={() => handleShowFormEdit(user.id)}
+                                                className="btn btn-primary me-3">
+                                                Edit
+                                            </button>
+                                            <button 
+                                                data-id={user.id}
+                                                className="btn btn-danger" 
+                                                onClick={ () => handleDelete(user.id) }
+                                                        
+                                                >
+                                                Delete
+                                            </button>
                                         </td>
                                     </tr>
                                 )
