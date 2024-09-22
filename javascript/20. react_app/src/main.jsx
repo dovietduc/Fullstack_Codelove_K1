@@ -5,6 +5,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* gọi function App */}
     <App />
   </StrictMode>,
 )

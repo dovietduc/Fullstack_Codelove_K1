@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+header {
+  color: red;
+}
+
+button.change {
+  background: rgb(64, 160, 160);
+}
